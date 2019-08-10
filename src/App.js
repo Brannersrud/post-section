@@ -1,11 +1,14 @@
 import React from 'react';
-import Singlepost from './components/singlepost';
-import * as image from './images/Screenshot 2019-05-27 at 17.06.52.png';
+import Postview from './components/postview';
 
 
 const App = () => {
+  const arr=[{id:'21041','title':'Sometitle','imsrc':'orkero.jpg', content:'hehe'}, {id:'21041','title':'Sometitle','imsrc':'orkero.jpg', content:'hehe'}]
   return (
     <div className="App">
+    <Postview 
+    postarray={arr}
+    />
     </div>
   );
 }
